@@ -37,7 +37,7 @@ app.get('/favicon.ico', (req, res) => {
 
 // set the initial entry point
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/index.html'))
+  res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
 app.listen(PORT, () => {

@@ -1,0 +1,27 @@
+{
+  "name": "lecture8",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel watch frontend/src/index.html",
+    "server": "node backend/index.js",
+    "dev": "concurrently --kill-others \"npm run build\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-react-refresh-wrap": "^2.4.0",
+    "axios": "^0.26.1",
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "parcel": "^2.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

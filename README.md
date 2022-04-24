@@ -17,6 +17,7 @@ First, we need to understand what kinds of things we are deploying. In our front
 All working code is inside this repo. Below I will explain the deploy instructions/ changes I made.
 
 **Buildpacks**
+
 On the settings page on Heroku, under buildpacks, click on *add buildpack* to add the following two things
 1. `https://github.com/heroku/heroku-buildpack-static`
 2. `heroku/nodejs`
@@ -26,6 +27,7 @@ The first buildpack is for building the static files in the frontend and the sec
 ![buildpack](./img/buildpack.png)
 
 **Local code**
+
 In our local code, we need to change several things
 
 In `server.js`, instead of hard-coding the port number to be 3000, define a variables `const PORT = process.env.PORT || 3000` and use `PORT` in `app.listen()`. This is done to allow Heroku using other ports for our website.

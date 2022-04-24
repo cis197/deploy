@@ -3,6 +3,7 @@ const express = require('express')
 const path = require('path')
 
 const AccountRouter = require('./routes/account')
+const PORT = process.env.PORT || 3000
 
 // const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/test'
 
@@ -25,6 +26,10 @@ app.get('/', (req, res) => {
 
 app.use('/account', AccountRouter)
 
+app.get('/data', (req, res) => {
+  res.send('data is here')
+})
+
 // set favicon
 app.get('/favicon.ico', (req, res) => {
   res.status(404).send()
@@ -35,7 +40,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'))
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('listening on 3000')
   console.log('mongoDB is connected')
 })

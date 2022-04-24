@@ -1,16 +1,16 @@
 const express = require('express')
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const path = require('path')
 
 const AccountRouter = require('./routes/account')
 const PORT = process.env.PORT || 3000
 
-// const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/test'
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://peter:peter@cluster0.7v7ds.mongodb.net/Cluster0?retryWrites=true&w=majority'
 
-// mongoose.connect(MONGO_URI, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// })
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 
 const app = express()
 

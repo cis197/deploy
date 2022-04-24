@@ -5,7 +5,7 @@ const path = require('path')
 const AccountRouter = require('./routes/account')
 const PORT = process.env.PORT || 3000
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://peter:peter@cluster0.7v7ds.mongodb.net/Cluster0?retryWrites=true&w=majority'
+const MONGO_URI = process.env.MONGODB_URI || 'REPLACE THIS WITH YOUR REMOTE MONGO URI'
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,

@@ -60,10 +60,12 @@ To see how to commit/ upload the code to Heroku, refer to the *Deploy* tab. You 
 ![deploy](/img/deploy.png)
 
 <ins>Alternatives</ins>
+
 Here's a [link](https://markmurray.co/blog/express-parcel-react-now/) to how you would deploy on Now.
 
 ---
 **Links I referred to when testing**
+
 MongoDB
 - https://www.freecodecamp.org/news/get-started-with-mongodb-atlas/
 - https://www.mongodb.com/developer/how-to/use-atlas-on-heroku/
